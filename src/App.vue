@@ -179,10 +179,10 @@ onMounted(()=>{
   loader.setDRACOLoader(dracoLoader);
   loader.load('./model/formula_car.glb',(gltf)=>{ //
     const heli=gltf.scene;
-    console.log(heli);
+    // console.log(heli);
     heli.traverse((child)=>{
       if(child.isMesh){
-        console.log(child);
+        // console.log(child);
         child.castShadow=true;
       }
       //Object_4 手臂 5手
